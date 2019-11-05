@@ -5,7 +5,7 @@ function  validate() {
     
 }
 
-function validateHandles(schema, check = 'body' ) {
+function validateHandler(schema, check = 'body' ) {
     return function(req, res, next) {
         const error = validate(req[check],shema);
 
@@ -15,4 +15,4 @@ function validateHandles(schema, check = 'body' ) {
     
 }
 
-module.exports = validateHandles;
+module.exports = validateHandler;
