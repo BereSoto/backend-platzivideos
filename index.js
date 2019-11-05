@@ -4,7 +4,7 @@ const app = express();
 const { config } = require('./config/index');
 const moviesApi = require('./routes/movies.js');
 
-const { logErrors, errorHandler } = require('utils/middleware/errorHandlers.js');
+const { logErrors, errorHandler } = require('./utils/middleware/errorHandlers.js');
 
 app.use(express.json());
 app.use(logErrors);
