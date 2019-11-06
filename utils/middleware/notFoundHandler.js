@@ -1,4 +1,4 @@
-const boom = require('@happi/boom');
+const boom = require('@hapi/boom');
 
 function notFoundHandler(req, res) {
     const{
